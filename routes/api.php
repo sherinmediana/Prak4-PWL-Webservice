@@ -3,7 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProjectsController;
-// use App\Http\Controllers\CommentController;
+use App\Http\Controllers\CommentController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -15,5 +15,5 @@ use App\Http\Controllers\ProjectsController;
 |
 */
 
-Route::resource('projects', ProjectsController::class);
-// Route::resource('projects', ProjectController::class);
+Route::resource('/projects', ProjectsController::class);
+Route::resource('comments', CommentController::class);
